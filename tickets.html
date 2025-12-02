@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز التذاكر - مجد</title>
+    <link rel="icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=El+Messiri:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="/images/logo.png" alt="شعار مجد">
+        <span>مَجْد</span>
+    </div>
+
+    <ul class="linksList">
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><a href="shop.html">المتجر</a></li>
+        <li><a href="about.html">عنا</a></li>
+        <li><a href="tickets.html" class="ticket-btn active">حجز التذاكر</a></li>
+    </ul>
+
+    <div class="cart" onclick="window.location.href='cart.html'">
+        <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="booking-hero">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h1>حجز تذاكر المتحف</h1>
+            <p>احجز تذكرتك الآن واستمتع برحلة عبر الزمن لاكتشاف حضارة مصر العريقة</p>
+           
+        </div>
+    </div>
+</section>
+
+<!-- Booking Section -->
+<section class="booking-section">
+    <div class="container">
+        <div class="booking-header">
+            <h2 class="booking-title">احجز تذكرتك الآن</h2>
+            <p class="booking-subtitle">املأ البيانات التالية لإتمام حجز زيارتك للمتحف</p>
+        </div>
+
+        <div class="booking-container">
+            <!-- نموذج الحجز -->
+            <div class="booking-form-wrapper">
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">
+                                <i class="fas fa-user"></i>
+                                الاسم الكامل
+                            </label>
+                            <input type="text" id="fullName" placeholder="اكتب اسمك الكامل" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                                البريد الإلكتروني
+                            </label>
+                            <input type="email" id="email" placeholder="example@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i>
+                                رقم الهاتف
+                            </label>
+                            <input type="tel" id="phone" placeholder="010XXXXXXXX" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ticketType">
+                                <i class="fas fa-ticket-alt"></i>
+                                نوع التذكرة
+                            </label>
+                            <select id="ticketType" required>
+                                <option value="">اختار نوع التذكرة</option>
+                                <option value="single" data-price="150">فردية - 150 ج.م</option>
+                                <option value="family" data-price="400">عائلية (4 أشخاص) - 400 ج.م</option>
+                                <option value="student" data-price="75">طلاب - 75 ج.م</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="visitDate">
+                                <i class="fas fa-calendar-day"></i>
+                                تاريخ الزيارة
+                            </label>
+                            <input type="date" id="visitDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="visitTime">
+                                <i class="fas fa-clock"></i>
+                                ميعاد الزيارة
+                            </label>
+                            <select id="visitTime" required>
+                                <option value="">اختار الميعاد</option>
+                                <option value="09:00">9:00 صباحًا</option>
+                                <option value="11:00">11:00 صباحًا</option>
+                                <option value="13:00">1:00 ظهرًا</option>
+                                <option value="15:00">3:00 عصرًا</option>
+                                <option value="17:00">5:00 مساءً</option>
+                                <option value="19:00">7:00 مساءً</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">
+                            <i class="fas fa-sticky-note"></i>
+                            ملاحظات إضافية (اختياري)
+                        </label>
+                        <textarea id="notes" rows="3" placeholder="أي متطلبات خاصة أو ملاحظات..."></textarea>
+                    </div>
+
+                    <!-- ملخص الحجز -->
+                    <div class="booking-summary">
+                        <h3>ملخص الحجز</h3>
+                        <div class="summary-content">
+                            <div class="summary-item">
+                                <span>نوع التذكرة:</span>
+                                <span id="summaryTicket">-</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>السعر:</span>
+                                <span id="summaryPrice">-</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>التاريخ:</span>
+                                <span id="summaryDate">-</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>الوقت:</span>
+                                <span id="summaryTime">-</span>
+                            </div>
+                            <div class="summary-total">
+                                <span>المجموع:</span>
+                                <span id="totalAmount">0 ج.م</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="confirm-booking-btn">
+                            <i class="fas fa-check-circle"></i>
+                            تأكيد الحجز
+                        </button>
+                        <p class="form-note">
+                            <i class="fas fa-info-circle"></i>
+                            ستصلك رسالة تأكيد على البريد الإلكتروني ورقم الهاتف
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- معلومات إضافية -->
+            <div class="booking-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h4>موقع المتحف</h4>
+                    <p>القاهرة الجديدة - المتحف المصري الكبير</p>
+                    <a href="#" class="info-link">
+                        <i class="fas fa-directions"></i>
+                        احصل على الاتجاهات
+                    </a>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>مواعيد العمل</h4>
+                    <p>يوميًا من 9 صباحًا إلى 10 مساءً</p>
+                    <p class="note">آخر دخول: 8:30 مساءً</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h4>مساعدة</h4>
+                    <p>لديك استفسار؟ نحن هنا لمساعدتك</p>
+                    <a href="tel:+201098887773" class="info-link">
+                        <i class="fas fa-phone"></i>
+                        +20 109 888 777 3
+                    </a>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h4>شروط مهمة</h4>
+                    <ul class="terms-list">
+                        <li>يجب الحضور قبل الموعد بـ 15 دقيقة</li>
+                        <li>التذاكر غير قابلة للاسترداد</li>
+                        <li>يُمنع الطعام والشراب داخل القاعات</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- تذاكر مقترحة -->
+<section class="suggested-tickets">
+    <div class="container">
+        <h2 class="section-title">اختر من بين تذاكرنا</h2>
+        <p class="section-subtitle">تذاكر تناسب جميع احتياجاتك</p>
+
+        <div class="tickets-grid">
+            <div class="ticket-card">
+                <div class="ticket-badge">الأكثر طلباً</div>
+                <div class="ticket-header">
+                    <i class="fas fa-users"></i>
+                    <h3>عائلية</h3>
+                </div>
+                <div class="ticket-price">
+                    <span class="price">400 <span class="currency">ج.م</span></span>
+                    <span class="period">لـ 4 أفراد</span>
+                </div>
+                <ul class="ticket-features">
+                    <li><i class="fas fa-check"></i> دخول لـ 4 أشخاص</li>
+                    <li><i class="fas fa-check"></i> جولة إرشادية خاصة</li>
+                    <li><i class="fas fa-check"></i> هدايا تذكارية</li>
+                </ul>
+                <button class="select-ticket-btn" data-type="family">اختيار هذه التذكرة</button>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-header">
+                    <i class="fas fa-user"></i>
+                    <h3>فردية</h3>
+                </div>
+                <div class="ticket-price">
+                    <span class="price">150 <span class="currency">ج.م</span></span>
+                    <span class="period">للشخص الواحد</span>
+                </div>
+                <ul class="ticket-features">
+                    <li><i class="fas fa-check"></i> دخول كامل للمتحف</li>
+                    <li><i class="fas fa-check"></i> جولة إرشادية مجانية</li>
+                    <li><i class="fas fa-check"></i> كتيب تعريفي</li>
+                </ul>
+                <button class="select-ticket-btn" data-type="single">اختيار هذه التذكرة</button>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-header">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>طلابية</h3>
+                </div>
+                <div class="ticket-price">
+                    <span class="price">75 <span class="currency">ج.م</span></span>
+                    <span class="period">للطالب</span>
+                </div>
+                <ul class="ticket-features">
+                    <li><i class="fas fa-check"></i> دخول كامل للمتحف</li>
+                    <li><i class="fas fa-check"></i> دليل بحثي مجاني</li>
+                    <li><i class="fas fa-check"></i> ورش عمل تعليمية</li>
+                </ul>
+                <button class="select-ticket-btn" data-type="student">اختيار هذه التذكرة</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-main">
+            
+            <!-- اللوجو والوصف -->
+            <div class="footer-section logo-section">
+                <div class="footer-logo">
+                    <img src="/images/logo.png" alt="مجد">
+                    <span>مَجْد</span>
+                </div>
+                <p>نافذتك لاستكشاف روائع الحضارة المصرية بأسلوب عصري وأصيل.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- روابط سريعة -->
+            <div class="footer-section">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="home.html">الرئيسية</a></li>
+                    <li><a href="shop.html">المتجر</a></li>
+                    <li><a href="about.html">عنا</a></li>
+                    <li><a href="tickets.html">حجز التذاكر</a></li>
+                </ul>
+            </div>
+
+            <!-- معلومات التواصل -->
+            <div class="footer-section">
+                <h4>تواصل معنا</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i>القاهرة الجديدة - المتحف المصري الكبير</li>
+                    <li><i class="fas fa-phone"></i>+20 109 888 777 3</li>
+                    <li><i class="fas fa-envelope"></i>info@magd.museum</li>
+                    <li><i class="fas fa-clock"></i>يوميًا من 9 صباحًا - 10 مساءً</li>
+                </ul>
+            </div>
+
+            <!-- النشرة البريدية -->
+            <div class="footer-section">
+                <h4>النشرة البريدية</h4>
+                <p>احصل على العروض والفعاليات أول بأول</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="بريدك الإلكتروني" required>
+                    <button type="submit">اشترك</button>
+                </form>
+                <p class="privacy-note">نعدك بعدم مشاركة بريدك مع أي طرف ثالث</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- حقوق النشر -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <p>&copy; 2024 مَجْد - جميع الحقوق محفوظة</p>
+                <div class="footer-links">
+                    <a href="privacy.html">سياسة الخصوصية</a>
+                    <a href="terms.html">الشروط والأحكام</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

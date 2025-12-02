@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مجد</title>
+      <link rel="icon" href="/images/logo.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=El+Messiri:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="/images/logo.png" alt="">
+        <span>مَجْد</span>
+    </div>
+
+    <ul class="linksList">
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><a href="shop.html">المتجر</a></li>
+        <li><a href="about.html">عنا</a></li>
+        <li><a href="tickets.html" class="ticket-btn">حجز التذاكر</a></li>
+    </ul>
+
+     <div class="cart" onclick="window.location.href='cart.html'">
+        <i class="fas fa-shopping-cart"></i>
+        
+    </div>
+</header>
+
+<section class="section1">
+    <video class="background-video" autoplay muted loop>
+        <source src="/images/video_2025-11-26_13-59-31.mp4" type="video/mp4">
+        المتصفح لا يدعم تشغيل الفيديو.
+    </video>
+
+    <div class="overlay"></div>
+
+   <div class="text">
+<h1>وراء كل مجد... حضاره لا تنسى</h1>    
+<p>اكتشف روائع المتحف المصري</p>
+    <a href="#about" class="more-btn">تعرف على المزيد</a>
+
+</div>
+
+</section>
+
+
+<section class="about">
+  <div class="container2">
+    
+    <!-- النص -->
+    <div class="about-text ">
+      <h1>عن مَجْد</h1>
+      <p>
+        مَجْد هو نافذتك لاكتشاف روائع الحضارة المصرية العريقة. من خلال متحفنا، 
+        يمكنك التعرف على تاريخنا الغني وفنوننا التراثية التي صمدت عبر القرون. 
+        نسعى في مَجْد لتقديم تجربة تعليمية وترفيهية ممتعة، تجمع بين التعرف على 
+        التحف الفنية، استكشاف القصص الملهمة، والاستمتاع بمنتجات مستوحاة من 
+        إرثنا الثقافي الفريد.
+      </p>
+      <a href="about.html" class="btn-primary">اعرف أكتر عنا</a>
+    </div>
+    
+    <!-- الصورة -->
+    <div class="about-image ">
+      <img src="/images/photo_2025-11-25_17-17-32.jpg" alt="متحف مجد - الحضارة المصرية">
+    </div>
+    
+  </div>
+</section>
+<!-- ==================== سكشن أهم القطع الأثرية ==================== -->
+<section class="artifacts-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>أهم القطع الأثرية</h2>
+      <p>اكتشف روائع الحضارة المصرية عبر أبرز القطع الأثرية التي تعكس عظمة الأجداد</p>
+    </div>
+    
+    <div class="artifacts-grid">
+      <!-- قطعة 1 -->
+      <div class="artifact-card">
+        <div class="artifact-image">
+          <img src="/images/tot.jpeg" alt="قناع توت عنخ آمون">
+          <div class="artifact-overlay">
+<button 
+  class="view-btn" 
+  onclick="window.location.href='https://gem.eg/ar/collection/artefacts/the-golden-burial-mask-of-tutankhamun'">
+  عرض التفاصيل
+</button>
+          </div>
+        </div>
+        <div class="artifact-info">
+          <h3>قناع توت عنخ آمون</h3>
+          <p class="artifact-era">العصر: الدولة الحديثة</p>
+          <p class="artifact-desc">قناع جنائزي ذهبي للملك توت عنخ آمون، أحد أشهر القطع الأثرية في العالم</p>
+          <div class="artifact-meta">
+            <span class="material">الذهب والأحجار الكريمة</span>
+            <span class="location">المتحف المصري</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- قطعة 2 -->
+      <div class="artifact-card">
+        <div class="artifact-image">
+          <img src="/images/saqr.jpeg" alt="تمثال نفرتيتي">
+          <div class="artifact-overlay">
+            <button class="view-btn" onclick="window.location.href='https://gem.eg/ar/collection/artefacts/statuette-of-a-falcon'">عرض التفاصيل</button>
+          </div>
+        </div>
+        <div class="artifact-info">
+          <h3>تمثال صقر</h3>
+          <p class="artifact-era">العصر: العصر المتأخر</p>
+          <p class="artifact-desc">يصور التمثال المعبود المصري القديم حورس الذي ارتبط بالملكية وهو يرتدي تاجاً</p>
+          <div class="artifact-meta">
+            <span class="material">  البرونز</span>
+            <span class="location">المتحف المصرى </span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- قطعة 3 -->
+      <div class="artifact-card">
+        <div class="artifact-image">
+          <img src="/images/masla.jpeg" alt="حجر رشيد">
+          <div class="artifact-overlay">
+            <button class="view-btn">عرض التفاصيل</button>
+          </div>
+        </div>
+        <div class="artifact-info">
+          <h3>مسلة الملك رمسيس الثاني </h3>
+          <p class="artifact-era">العصر: الدولة الحديثة</p>
+          <p class="artifact-desc">شيد الملك رمسيس الثاني أكثر من عشر مسلات وتعتبر هذه المسلة التي يبلغ ارتفاعها 16 متراً هي أطول المسلات.</p>
+          <div class="artifact-meta">
+            <span class="material">الجرانيت </span>
+            <span class="location">المتحف المصرى</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- قطعة 4 -->
+      <div class="artifact-card">
+        <div class="artifact-image">
+          <img src="/images/tabot.jpeg" alt="تمثال أبو الهول">
+          <div class="artifact-overlay">
+            <button class="view-btn" onclick="window.location.href='https://gem.eg/ar/collection/artefacts/exterior-coffin-of-mesehti'">عرض التفاصيل</button>
+          </div>
+        </div>
+        <div class="artifact-info">
+          <h3>  التابوت الخارجي لمسحتي</h3>
+          <p class="artifact-era">العصر:  الدولة الوسطى</p>
+          <p class="artifact-desc">عُثِر على تابوتين خشبيين في مقبرة "مسحتي" بجبانة أسيوط بصعيد مصر. كان "مسحتي" حاكمًا لإقليم أسيوط</p>
+          <div class="artifact-meta">
+            <span class="material"> خشب</span>
+            <span class="location">المتحف المصرى </span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- قطعة 5 -->
+      <div class="artifact-card">
+        <div class="artifact-image">
+          <img src="/images/temsal.jpeg" alt="مركب خوفو الشمسي">
+          <div class="artifact-overlay">
+            <button class="view-btn">عرض التفاصيل</button>
+          </div>
+        </div>
+        <div class="artifact-info">
+          <h3>  تمثال الكاتب متري</h3>
+          <p class="artifact-era">العصر:  الدولة القديمة</p>
+          <p class="artifact-desc">ينسب هذا التمثال الخشبي الملون إلى "متري"، الذي تقلد عدداً من الألقاب الهامة خلال عصر الأسرة الخامسة</p>
+          <div class="artifact-meta">
+            <span class="material"> خشب - أصباغ</span>
+            <span class="location">  المتحف المصرى</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- قطعة 6 -->
+      <div class="artifact-card">
+        <div class="artifact-image">
+          <img src="/images/t2.jpeg" alt="مجوهرات الملكة أحمس">
+          <div class="artifact-overlay">
+            <button class="view-btn">عرض التفاصيل</button>
+          </div>
+        </div>
+        <div class="artifact-info">
+          <h3>  تمثال المعبود بتاح والملك رمسيس الثاني مع المعبودة سخمت
+          </h3>
+          <p class="artifact-era">العصر: الدولة الحديثة</p>
+          <p class="artifact-desc"> يصور الملك رمسيس الثاني واقفاً بين المعبود بتاح والمعبودة سخمت</p>
+          <div class="artifact-meta">
+            <span class="material">الجرانيت </span>
+            <span class="location">المتحف المصري</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== سكشن حجز التذاكر ==================== -->
+<section class="tickets-preview">
+  <div class="container">
+    <div class="tickets-header">
+      <h2>حجز تذاكر المتحف</h2>
+      <p>احجز تذكرتك الآن واستمتع برحلة عبر الزمن لاكتشاف حضارة مصر العريقة</p>
+    </div>
+
+    <div class="tickets-grid">
+      <!-- تذكرة فردية -->
+      <div class="ticket-card">
+        <div class="ticket-type">
+          <i class="fas fa-user"></i>
+          <h3>تذكرة فردية</h3>
+        </div>
+        <div class="ticket-price">
+          <span class="price">150 <span class="currency">ج.م</span></span>
+          <span class="period">/ للفرد</span>
+        </div>
+        <ul class="ticket-features">
+          <li><i class="fas fa-check"></i> دخول كامل للمتحف</li>
+          <li><i class="fas fa-check"></i> جولة إرشادية مجانية</li>
+          <li><i class="fas fa-check"></i> كتيب تعريفي</li>
+          <li><i class="fas fa-check"></i> خصم 10% في المتجر</li>
+        </ul>
+        <a href="tickets.html" class="book-ticket-btn">احجز الآن</a>
+      </div>
+
+      <!-- تذكرة عائلية -->
+      <div class="ticket-card popular">
+        <div class="popular-badge">الأكثر طلباً</div>
+        <div class="ticket-type">
+          <i class="fas fa-users"></i>
+          <h3>تذكرة عائلية</h3>
+        </div>
+        <div class="ticket-price">
+          <span class="price">400 <span class="currency">ج.م</span></span>
+          <span class="period">/ لـ 4 أفراد</span>
+        </div>
+        <ul class="ticket-features">
+          <li><i class="fas fa-check"></i> دخول لـ 4 أفراد</li>
+          <li><i class="fas fa-check"></i> جولة إرشادية خاصة</li>
+          <li><i class="fas fa-check"></i> هدايا تذكارية</li>
+          <li><i class="fas fa-check"></i> خصم 15% في المتجر</li>
+        </ul>
+        <a href="tickets.html" class="book-ticket-btn">احجز الآن</a>
+      </div>
+
+      <!-- تذكرة طلابية -->
+      <div class="ticket-card">
+        <div class="ticket-type">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>تذكرة طلابية</h3>
+        </div>
+        <div class="ticket-price">
+          <span class="price">75 <span class="currency">ج.م</span></span>
+          <span class="period">/ للطالب</span>
+        </div>
+        <ul class="ticket-features">
+          <li><i class="fas fa-check"></i> دخول كامل للمتحف</li>
+          <li><i class="fas fa-check"></i> ورش عمل تعليمية</li>
+          <li><i class="fas fa-check"></i> دليل بحثي مجاني</li>
+          <li><i class="fas fa-check"></i> خصم 20% في المتجر</li>
+        </ul>
+        <a href="tickets.html" class="book-ticket-btn">احجز الآن</a>
+      </div>
+    </div>
+
+    <div class="tickets-info">
+      <div class="info-box">
+        <i class="fas fa-clock"></i>
+        <div>
+          <h4>مواعيد العمل</h4>
+          <p>يوميًا من 9 صباحًا - 10 مساءً</p>
+        </div>
+      </div>
+      <div class="info-box">
+        <i class="fas fa-calendar-check"></i>
+        <div>
+          <h4>سهولة الحجز</h4>
+          <p>احجز أونلاين واستلم التذكرة فوراً</p>
+        </div>
+      </div>
+      <div class="info-box">
+        <i class="fas fa-headset"></i>
+        <div>
+          <h4>دعم فني</h4>
+          <p>خدمة عملاء متاحة 24/7</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-main">
+      
+      <!-- اللوجو والوصف -->
+      <div class="footer-section logo-section">
+        <div class="footer-logo">
+          <img src="/images/logo.png" alt="مجد">
+          <span>مَجْد</span>
+        </div>
+        <p>نافذتك لاستكشاف روائع الحضارة المصرية بأسلوب عصري وأصيل.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- روابط سريعة -->
+      <div class="footer-section">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="home.html">الرئيسية</a></li>
+          <li><a href="shop.html">المتجر</a></li>
+          <li><a href="about.html">عنا</a></li>
+          <li><a href="tickets.html">حجز التذاكر</a></li>
+        </ul>
+      </div>
+
+      <!-- معلومات التواصل -->
+      <div class="footer-section">
+        <h4>تواصل معنا</h4>
+        <ul class="contact-info">
+          <li><i class="fas fa-map-marker-alt"></i>القاهرة الجديدة - المتحف المصري الكبير</li>
+          <li><i class="fas fa-phone"></i>+20 109 888 777 3</li>
+          <li><i class="fas fa-envelope"></i>info@magd.museum</li>
+          <li><i class="fas fa-clock"></i>يوميًا من 9 صباحًا - 10 مساءً</li>
+        </ul>
+      </div>
+
+      <!-- النشرة البريدية -->
+      <div class="footer-section">
+        <h4>النشرة البريدية</h4>
+        <p>احصل على العروض والفعاليات أول بأول</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="بريدك الإلكتروني" required>
+          <button type="submit">اشترك</button>
+        </form>
+        <p class="privacy-note">نعدك بعدم مشاركة بريدك مع أي طرف ثالث</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- حقوق النشر -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-content">
+        <p>&copy; 2024 مَجْد - جميع الحقوق محفوظة</p>
+        <div class="footer-links">
+          <a href="privacy.html">سياسة الخصوصية</a>
+          <a href="terms.html">الشروط والأحكام</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+<script src="script.js"></script>
+</body>
+</html>

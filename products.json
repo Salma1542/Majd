@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Tutankhamun Sweatshirt - Black",
+    "price": 650,
+    "category": "sweatshirt",
+    "image": "images/sweet1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Nefertiti Sweatshirt - Grey",
+    "price": 720,
+    "category": "sweatshirt",
+    "image": "images/sweet2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Khufu Backpack - Black Leather",
+    "price": 1450,
+    "category": "bags",
+    "image": "images/bag1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Grand Museum Shoulder Bag - Beige",
+    "price": 980,
+    "category": "accessories",
+    "image": "images/access1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Eye of Horus Necklace - Silver",
+    "price": 890,
+    "category": "accessories",
+    "image": "images/access2.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Golden Pharaoh Bracelet",
+    "price": 550,
+    "category": "sweatshirt",
+    "image": "images/sweet3.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Grand Museum Sweatshirt - White",
+    "price": 699,
+    "category": "sweatshirt",
+    "image": "images/sweet7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Key of Life Medal - Gold",
+    "price": 420,
+    "category": "sweatshirt",
+    "image": "images/sweet6.jpg"
+  },
+   {
+    "id":9,
+    "name": "Key of Life Medal - Gold",
+    "price": 420,
+    "category": "sweatshirt",
+    "image": "images/sweet8.jpg"
+  },
+   {
+    "id": 10,
+    "name": "Key of Life Medal - Gold",
+    "price": 420,
+    "category": "sweatshirt",
+    "image": "images/sweet9.jpg"
+  },
+   {
+    "id": 11,
+    "name": "Key of Life Medal - Gold",
+    "price": 420,
+    "category": "sweatshirt",
+    "image": "images/sweet10.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Khufu Backpack - Black Leather",
+    "price": 1450,
+    "category": "bags",
+    "image": "images/bag2.jpg"
+  }
+]

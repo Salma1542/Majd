@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عربة التسوق - مجد</title>
+    <link rel="icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=El+Messiri:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="مجد">
+            <span>مَجْد</span>
+        </div>
+
+        <nav class="linksList">
+            <li><a href="home.html">الرئيسية</a></li>
+            <li><a href="shop.html">المتجر</a></li>
+            <li><a href="about.html">عنا</a></li>
+            <li><a href="tickets.html" class="ticket-btn">حجز التذاكر</a></li>
+        </nav>
+
+        <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Hero Image -->
+    <section class="shopImg">
+        <img src="/images/land.jpg" alt="" srcset="">  
+        <div class="overlay"></div>  
+        
+        <div class="textShop">
+            <h1>عربة التسوق</h1>
+            <p>المنتجات التي اخترتها</p>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-content">
+        <div class="container">
+            <div class="cart-container">
+                <!-- عناصر العربة -->
+                <div class="cart-items" id="cartItems">
+                    <h2 class="section-title">منتجاتك</h2>
+                    
+                    <!-- سيتم تعبئتها بالجافاسكريبت -->
+                    <div class="empty-cart" id="emptyCart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>عربة التسوق فارغة</h3>
+                        <p>لم تقم بإضافة أي منتجات بعد</p>
+                        <a href="shop.html" class="btn-primary">تسوق الآن</a>
+                    </div>
+                </div>
+
+                <!-- ملخص الطلب -->
+                <div class="cart-summary">
+                    <h2 class="section-title">ملخص الطلب</h2>
+                    
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>عدد المنتجات</span>
+                            <span id="itemCount">0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>المجموع الجزئي</span>
+                            <span id="subtotal">0 ج.م</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>الشحن</span>
+                            <span id="shipping">50 ج.م</span>
+                        </div>
+                        <div class="summary-row discount-row">
+                            <span>الخصم</span>
+                            <span id="discount">0 ج.م</span>
+                        </div>
+                        <div class="summary-row total-row">
+                            <span>المجموع الكلي</span>
+                            <span id="total">50 ج.م</span>
+                        </div>
+                    </div>
+
+                    <!-- كود الخصم -->
+                    <div class="discount-section">
+                        <h3>هل لديك كود خصم؟</h3>
+                        <div class="discount-input">
+                            <input type="text" id="discountCode" placeholder="أدخل كود الخصم">
+                            <button id="applyDiscount">تطبيق</button>
+                        </div>
+                        <p class="discount-note" id="discountMessage"></p>
+                    </div>
+
+                    <!-- زر الدفع -->
+                    <div class="checkout-section">
+                        <button class="checkout-btn" id="checkoutBtn">
+                            <i class="fas fa-lock"></i>
+                            اتمام الشراء
+                        </button>
+                        <p class="secure-note">
+                            <i class="fas fa-shield-alt"></i>
+                            عملية دفع آمنة ومشفرة
+                        </p>
+                    </div>
+
+                    <!-- طرق الدفع -->
+                    <div class="payment-methods">
+                        <h3>طرق الدفع المتاحة</h3>
+                        <div class="methods-grid">
+                            <div class="method">
+                                <i class="fas fa-credit-card"></i>
+                                <span>بطاقات الائتمان</span>
+                            </div>
+                            <div class="method">
+                                <i class="fas fa-university"></i>
+                                <span>التحويل البنكي</span>
+                            </div>
+                            <div class="method">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>فودافون كاش</span>
+                            </div>
+                            <div class="method">
+                                <i class="fas fa-wallet"></i>
+                                <span>محفظة إلكترونية</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- اقتراحات منتجات -->
+    <section class="suggested-products">
+        <div class="container">
+            <h2 class="section-title">قد يعجبك أيضاً</h2>
+            <div class="products-grids" id="suggestedProducts">
+                <!-- سيتم تعبئتها بالجافاسكريبت -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                
+                <!-- اللوجو والوصف -->
+                <div class="footer-section logo-section">
+                    <div class="footer-logo">
+                        <img src="/images/logo.png" alt="مجد">
+                        <span>مَجْد</span>
+                    </div>
+                    <p>نافذتك لاستكشاف روائع الحضارة المصرية بأسلوب عصري وأصيل.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- روابط سريعة -->
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="home.html">الرئيسية</a></li>
+                        <li><a href="shop.html">المتجر</a></li>
+                        <li><a href="about.html">عنا</a></li>
+                        <li><a href="tickets.html">حجز التذاكر</a></li>
+                    </ul>
+                </div>
+
+                <!-- معلومات التواصل -->
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i>القاهرة الجديدة - المتحف المصري الكبير</li>
+                        <li><i class="fas fa-phone"></i>+20 109 888 777 3</li>
+                        <li><i class="fas fa-envelope"></i>info@magd.museum</li>
+                        <li><i class="fas fa-clock"></i>يوميًا من 9 صباحًا - 10 مساءً</li>
+                    </ul>
+                </div>
+
+                <!-- النشرة البريدية -->
+                <div class="footer-section">
+                    <h4>النشرة البريدية</h4>
+                    <p>احصل على العروض والفعاليات أول بأول</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                        <button type="submit">اشترك</button>
+                    </form>
+                    <p class="privacy-note">نعدك بعدم مشاركة بريدك مع أي طرف ثالث</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- حقوق النشر -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 مَجْد - جميع الحقوق محفوظة</p>
+                    <div class="footer-links">
+                        <a href="privacy.html">سياسة الخصوصية</a>
+                        <a href="terms.html">الشروط والأحكام</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
