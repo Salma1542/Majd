@@ -1,86 +1,754 @@
 [
   {
     "id": 1,
-    "name": "Tutankhamun Sweatshirt - Black",
-    "price": 650,
+    "name": "Long-sleeve sweatshirt ",
+    "price": 550,
     "category": "sweatshirt",
-    "image": "images/sweet1.jpg"
+    "image": "images/sweet1.jpg",
+    "images": [
+      "images/sweet1.jpg"
+      
+    ],
+    "description": "سويتشيرت توت عنخ آمون الأسود مصنوع من أجود أنواع القطن، مريح ومناسب لجميع الفصول. تصميم فريد يعبر عن التراث المصري العريق مع صورة الملك الشاب توت عنخ آمون.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "availableSizes": ["S", "M", "L", "XL"],
+    "rating": 4.5,
+    "colors": ["أسود"],
+    "material": "قطن 100%",
+    "stock": 15
   },
   {
     "id": 2,
     "name": "Nefertiti Sweatshirt - Grey",
     "price": 720,
     "category": "sweatshirt",
-    "image": "images/sweet2.jpg"
+    "image": "images/sweet2.jpg",
+    "images": [
+      "images/sweet2.jpg"
+     
+    ],
+    "description": "سويتشيرت نفرتيتي الرمادي يبرز جمال الملكة الأسطورية. مصنوع من قطن عالي الجودة مع تصميم أنيق يناسب جميع الأوقات.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "availableSizes": ["M", "L", "XL", "XXL"],
+    "rating": 4.8,
+    "colors": ["رمادي"],
+    "material": "قطن 95%، بوليستر 5%",
+    "stock": 12
   },
   {
     "id": 3,
-    "name": "Khufu Backpack - Black Leather",
-    "price": 1450,
+    "name": "Canvas tote bag ",
+    "price": 160,
     "category": "bags",
-    "image": "images/bag1.jpg"
+    "image": "images/bag1.jpg",
+    "images": [
+      "images/bag1.jpg"
+      
+    ],
+    "description": "حقيبة خوفو السوداء المصنوعة من الجلد الطبيعي. عملية وأنيقة مع تصميم مستوحى من الهرم الأكبر، مثالية للاستخدام اليومي.",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.7,
+    "colors": ["أسود"],
+    "material": "جلد طبيعي",
+    "stock": 8
   },
   {
     "id": 4,
-    "name": "Grand Museum Shoulder Bag - Beige",
-    "price": 980,
+    "name": "Stainlessteel braclet",
+    "price": 145,
     "category": "accessories",
-    "image": "images/access1.jpg"
+    "image": "images/access1.jpg",
+    "images": [
+      "images/access1.jpg"
+      
+    ],
+    "description": "حقيبة كتف المتحف المصري الكبير باللون البيج. مصنوعة يدوياً بتصميم فريد يجمع بين الأصالة والحداثة.",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.6,
+    "colors": ["بيج"],
+    "material": "قماش كانفاس",
+    "stock": 10
   },
   {
     "id": 5,
-    "name": "Eye of Horus Necklace - Silver",
-    "price": 890,
+    "name": "Eye of Horus Necklace ",
+    "price": 145,
     "category": "accessories",
-    "image": "images/access2.jpg"
+    "image": "images/access2.jpg",
+    "images": [
+      "images/access2.jpg",
+      "images/access2-1.jpg"
+    ],
+    "description": "قلادة عين حورس الفضية، رمز الحماية في الحضارة المصرية القديمة. مصنوعة من الفضة عالية الجودة مع تفاصيل دقيقة.",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.9,
+    "colors": ["فضي"],
+    "material": "فضة 925",
+    "stock": 20
   },
   {
     "id": 6,
-    "name": "Golden Pharaoh Bracelet",
-    "price": 550,
+    "name": "Long-sleeve sweatshirt ",
+    "price": 565,
     "category": "sweatshirt",
-    "image": "images/sweet3.jpg"
+    "image": "images/sweet3.jpg",
+    "images": [
+      "images/sweet3.jpg",
+      "images/sweet5.jpg",
+      "images/sweet4.jpg"
+    ],
+    "description": "سويتشيرت الفرعون الذهبي بتصميم ملكي فاخر. يجمع بين الراحة والأناقة مع لمسة من العظمة المصرية القديمة.",
+    "sizes": ["S", "M", "L", "XL"],
+    "availableSizes": ["S", "M", "L"],
+    "rating": 4.4,
+    "colors": ["ذهبي", "أسود"],
+    "material": "قطن 100%",
+    "stock": 18
   },
   {
     "id": 7,
-    "name": "Grand Museum Sweatshirt - White",
-    "price": 699,
+    "name": "Long-sleeve sweatshirt ",
+    "price": 565,
     "category": "sweatshirt",
-    "image": "images/sweet7.jpg"
+    "image": "images/sweet7.jpg",
+    "images": [
+      "images/sweet7.jpg",
+      "images/sweet7-2.jpg",
+      "images/sweet7-3.jpg"
+    ],
+    "description": "سويتشيرت المتحف المصري الكبير الأبيض. تصميم عصري يحمل شعار المتحف، مثالي لعشاق الحضارة المصرية.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "availableSizes": ["S", "M", "L", "XL", "XXL"],
+    "rating": 4.3,
+    "colors": ["أبيض"],
+    "material": "قطن 100%",
+    "stock": 25
   },
   {
     "id": 8,
     "name": "Key of Life Medal - Gold",
-    "price": 420,
+    "price": 565,
     "category": "sweatshirt",
-    "image": "images/sweet6.jpg"
-  },
-   {
-    "id":9,
-    "name": "Key of Life Medal - Gold",
-    "price": 420,
-    "category": "sweatshirt",
-    "image": "images/sweet8.jpg"
-  },
-   {
-    "id": 10,
-    "name": "Key of Life Medal - Gold",
-    "price": 420,
-    "category": "sweatshirt",
-    "image": "images/sweet9.jpg"
-  },
-   {
-    "id": 11,
-    "name": "Key of Life Medal - Gold",
-    "price": 420,
-    "category": "sweatshirt",
-    "image": "images/sweet10.jpg"
+    "image": "images/sweet6.jpg",
+    "images": [
+      "images/sweet6.jpg",
+      "images/sweet4.jpg",
+      "images/sweet5.jpg"
+    ],
+    "description": "سويتشيرت مفتاح الحياة الذهبي. رمز الخلود في الحضارة المصرية، مصنوع من قطن مريح وجودة عالية.",
+    "sizes": ["S", "M", "L"],
+    "availableSizes": ["S", "M"],
+    "rating": 4.2,
+    "colors": ["ذهبي", "أبيض"],
+    "material": "قطن 100%",
+    "stock": 14
   },
   {
-    "id": 3,
-    "name": "Khufu Backpack - Black Leather",
-    "price": 1450,
+    "id": 9,
+    "name": "Long-sleeve sweatshirt ",
+    "price": 565,
+    "category": "sweatshirt",
+    "image": "images/sweet8.jpg",
+    "images": [
+      "images/sweet8.jpg",
+      "images/sweet8-2.jpg",
+      "images/sweet8-3.jpg"
+    ],
+    "description": "سويتشيرت رمز العنخ، رمز الحياة الأبدية في مصر القديمة. تصميم بسيط وأنيق يناسب جميع الأذواق.",
+    "sizes": ["S", "M", "L", "XL"],
+    "availableSizes": ["S", "M", "L"],
+    "rating": 4.5,
+    "colors": ["أسود"],
+    "material": "قطن 100%",
+    "stock": 16
+  },
+  {
+    "id": 10,
+    "name": "Long-sleeve sweatshirt ",
+    "price": 565,
+    "category": "sweatshirt",
+    "image": "images/sweet9.jpg",
+    "images": [
+      "images/sweet9.jpg"
+      
+    ],
+    "description": "سويتشيرت تصميم خنفساء الجعران، رمز التجدد والحماية. تصميم فريد من نوعه مستوحى من البرديات المصرية.",
+    "sizes": ["S", "M", "L", "XL"],
+    "availableSizes": ["M", "L", "XL"],
+    "rating": 4.6,
+    "colors": ["أزرق داكن"],
+    "material": "قطن 100%",
+    "stock": 10
+  },
+  {
+    "id": 11,
+    "name": "Long-sleeve sweatshirt ",
+    "price": 565,
+    "category": "sweatshirt",
+    "image": "images/sweet10.jpg",
+    "images": [
+      "images/sweet10.jpg"
+   
+    ],
+    "description": "سويتشيرت بنمط الهيروغليفية. تصميم يعرض الكتابة المصرية القديمة بطريقة عصرية وجذابة.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "availableSizes": ["S", "M", "L", "XL"],
+    "rating": 4.4,
+    "colors": ["رمادي فاتح"],
+    "material": "قطن 100%",
+    "stock": 22
+  },
+  {
+    "id": 12,
+    "name": "Canvas tote bag ",
+    "price": 160,
     "category": "bags",
-    "image": "images/bag2.jpg"
+    "image": "images/bag2.jpg",
+    "images": [
+      "images/bag2.jpg",
+      "images/bag2-2.jpg",
+      "images/bag2-3.jpg"
+    ],
+    "description": "حقيبة تاج الفرعون بتصميم ملكي. مصنوعة من مواد عالية الجودة مع تفاصيل مستوحاة من التاج المزدوج لمصر.",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.8,
+    "colors": ["ذهبي", "أسود"],
+    "material": "جلد صناعي",
+    "stock": 7
+  },
+  {
+    "id": 13,
+    "name": "Long-sleeve sweatshirt without a hood, made of cotton Melton fabric.",
+    "price": 550,
+    "category": "sweatshirt",
+    "image": "images/sweet11.jpg",
+    "images": [
+      "images/sweet11.jpg",
+      "images/sweet11-2.jpg",
+      "images/sweet11-3.jpg",
+      "images/sweet11-4.jpg",
+            "images/sweet11-1.jpg",
+                  "images/sweet11-5.jpg"
+
+
+
+
+    ],
+    "description": "سويتشيرت طويل الأكمام مصنوع من قطن ميلتون عالي الجودة. بدون قلنسوة، مناسب للمناسبات الرسمية وغير الرسمية.",
+    "sizes": ["S", "M", "L", "XL"],
+    "availableSizes": ["S", "M", "L"],
+    "rating": 4.7,
+    "colors": ["أبيض", "أسود"],
+    "material": "قطن ميلتون",
+    "stock": 30
+  },
+  {
+    "id": 14,
+    "name": "Long-sleeve sweatshirt with a hood, made of cotton Melton fabric.",
+    "price": 565,
+    "category": "sweatshirt",
+    "image": "images/sweet12.jpg",
+    "images": [
+      "images/sweet12.jpg",
+      "images/sweet12-1.jpg",
+      "images/sweet12-2.jpg",
+      "images/sweet12-3.jpg",
+      "images/sweet12-4.jpg",
+      "images/sweet12-5.jpg"
+    ],
+    "description": "سويتشيرت ذو قلنسوة مصنوع من قطن ميلتون. مريح ودافئ مع جيوب جانبية، مثالي للطقس البارد.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "availableSizes": ["M", "L", "XL", "XXL"],
+    "rating": 4.9,
+    "colors": ["رمادي غامق"],
+    "material": "قطن ميلتون",
+    "stock": 20
+  },
+  {
+    "id": 15,
+    "name": "Stainlessteel pharoanic  chain in the shape of key of life",
+    "price": 150,
+    "category": "accessories",
+    "image": "images/access3.jpg",
+    "images": [
+      "images/access3.jpg",
+      "images/access3-1.jpg"
+    ],
+    "description": "سلسلة فرعونية من الفولاذ المقاوم للصدأ على شكل مفتاح الحياة ",
+    "availableSizes": ["A5"],
+    "rating": 4.5,
+    "colors": ["بيج", "ذهبي"],
+    "material": "ورق عالي الجودة",
+    "stock": 50
+  },
+  {
+    "id": 16,
+    "name": "Premium ceramic mug",
+    "price": 200,
+    "category": "mug",
+    "image": "images/mug1.jpg",
+    "images": [
+      "images/mug1.jpg",
+      "images/mug1-2.jpg",
+      "images/mug1-3.jpg",
+      "images/mug1-4.jpg",
+      "images/mug1-5.jpg",
+      "images/mug1-6.jpg"
+
+    ],
+    "description":"كوب سيراميك امن للميكروويف طلاء مقاوم للخدش مقبض مريح للاستخدام اليومى.",
+    "sizes": ["350ml", "300ml"],
+    "availableSizes": ["350ml","300ml"],
+    "rating": 4.8,
+    "colors": ["أبيض", "أزرق"],
+    "material": "سيراميك",
+    "stock": 40
+  },
+  {
+    "id": 17,
+    "name": "A sleek and comfortable pen ",
+    "price": 20,
+    "category": "siphon",
+    "image": "images/pen1.jpg",
+    "images": [
+      "images/pen1-1.jpg",
+      "images/pen1-2.jpg",
+      "images/pen1-3.jpg",
+      "images/pen1-4.jpg"
+
+    ],
+    "description": "قلم أنيق ومريح، مصمّم لكتابة سلسة ومنتظمة. جسمه خفيف وفيه جزء مريح للإمساك علشان يسهّل الكتابة من غير تعب، ومعاه حبر عالي الجودة بيكتب بخط واضح وثابت من غير تقطيع.  A sleek and comfortable pen designed for smooth, consistent writing. Features a lightweight body with an ergonomic grip for easy handling, and a high-quality ink refill that delivers clean, skip-free lines",
+
+  
+    "rating": 4.6,
+    "colors": ["فضي", "أسود"],
+    "material": "ستانلس ستيل",
+    "stock": 15
+  },
+  {
+    "id": 18,
+    "name": "Collection of Stainlessteel chain/ ring /braclet /earing",
+    "price": 420,
+    "category": "box",
+    "image": "images/box1.jpg",
+   
+    "description": "Collection of Stainlessteel chain/ ring /braclet /earing",
+   
+    "rating": 4.7,
+    "colors": ["ذهبي", "بني"],
+    "material": "خشب وزجاج",
+    "stock": 8
+  },
+  {
+    "id": 19,
+    "name": "Long-sleeve sweatshirt with a hood, made of cotton Melton fabric.",
+    "price": 565,
+    "category": "sweatshirt",
+    "image": "images/sweet13.jpg",
+    "images": [
+      "images/sweet13.jpg",
+      "images/sweet13-1.jpg"
+    ],
+    "description": "بلوزة بأكمام طويلة وغطاء للرأس، مصنوعة من قماش ميلتون القطني.",
+    "sizes": ["S", "M", "L", "XL","XXL"],
+    "availableSizes": ["S", "M", "L", "XL","XXL"],
+    "rating": 4.5,
+    "colors": ["أزرق"],
+    "material": "قطن مصري 100%",
+    "stock": 18
+  },
+  {
+    "id": 20,
+    "name": "Stainlessteel pharoanic  chain in the shape of Abo el houl",
+    "price": 150,
+    "category": "accessories",
+    "image": "images/access4.jpg",
+    "images": [
+      "images/access4.jpg",
+      "images/access4-1.jpg"
+    ],
+    "description": "سلسلة فرعونية من الستانلس ستيل على شكل أبو الهول",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.4,
+    "colors": ["بني", "أسود"],
+    "material": "جلد طبيعي",
+    "stock": 25
+  },
+  {
+    "id": 21,
+    "name": "Canvas tote bag ",
+    "price": 160,
+    "category": "bags",
+    "image": "images/bag3.jpg",
+    "images": [
+      "images/bag3.jpg",
+      "images/bag3-1.jpg",
+      "images/bag3-2.jpg",
+      "images/bag3-3.jpg",
+      
+      "images/bag3-6.jpg",
+      "images/bag3-7.jpg",
+      "images/bag3-8.jpg"
+    ],
+    "description": "حقيبة خفيفة الوزن وعملية مع تفاصيل مستوحاة من الحضارة المصرية.",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.6,
+    "colors": ["أزرق", "أبيض"],
+    "material": "نايلون",
+    "stock": 12
+  },
+  {
+    "id": 22,
+    "name": "Egyptian Calendar Notebook",
+    "price": 32,
+    "category": "notebook",
+    "image": "images/note1.jpg",
+    "images": [
+      "images/note1-1.jpg",
+      "images/note1-2.jpg",
+      "images/note1-3.jpg"
+    ],
+    "description": "A premium-quality notebook designed for everyday use. Features a smooth, durable cover with a clean modern finish, and high-grade, bleed-resistant paper for effortless writing. The notebook opens flat for a comfortable writing experience and includes firm binding that keeps pages secure نوت بوك عالية الجودة مناسبة للاستخدام اليومي. الغلاف متين وناعم بلمسة أنيقة وعصرية، والصفحات مصنوعة من ورق ممتاز ما بيسربش الحبر ويدّي كتابة مريحة وواضحة. النوت بوك بتتفرد بسهولة علشان تسهّل الكتابة، ومربوطة بشكل قوي يحافظ على كل الصفحات.",
+    "sizes": ["A5"],
+    "availableSizes": ["A5"],
+    "rating": 4.3,
+    "colors": ["أصفر", "بني"],
+    "material": "ورق عالي الجودة",
+    "stock": 35
+  },
+  {
+    "id": 23,
+    "name": "Thermal mug Double-wall stainless steel ",
+    "price": 325,
+    "category": "mug",
+    "image": "images/mug3.jpg",
+    "images": [
+      "images/mug3.jpg",
+      "images/mug3-1.jpg",
+      "images/mug3-2.jpg",
+      "images/mug3-3.jpg"
+
+    ],
+    "description": "مج حراري ستانلس ستيل مزدوج الجدار مقاوم للصدأ غطاء بلاستيك آمن (BPA Free)ممكن ييجي بمقبض سيليكون أو قاعدة مطاط ضد الانزلاقيحافظ على المشروبات ساخنة من 6 لـ 12 ساعةويحافظ عليها باردة من 12 لـ 24 ساعة",
+    "sizes": ["500ml"],
+    "availableSizes": ["500ml"],
+    "rating": 4.7,
+    "colors": ["فضي", "أسود"],
+    "material": "ستانلس ستيل",
+    "stock": 28
+  },
+  {
+    "id": 24,
+    "name": "Collection of Stainlessteel chain/ ring /braclet /earing",
+    "price": 340,
+    "category": "box",
+    "image": "images/box2.jpg",
+   
+    "description": "Collection of Stainlessteel chain/ ring /braclet /earing",
+   
+    "rating": 4.9,
+    "colors": ["ذهبي", "أحمر"],
+    "material": "خشب ومخمل",
+    "stock": 6
+  },
+  {
+    "id": 25,
+    "name": "Stainlessteel pharoanic  chain in the shape of Houras eyes",
+    "price": 150,
+    "category": "accessories",
+    "image": "images/access5.jpg",
+    "images": [
+      "images/access5.jpg"
+    ],
+    "description": "سلسلة فرعونية من الستانلس ستيل على شكل عيون حورس",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.4,
+    "colors": ["بني", "أسود"],
+    "material": "جلد طبيعي",
+    "stock": 25
+  },
+  {
+    "id": 26,
+    "name": "Stainlessteel braclet",
+    "price": 145,
+    "category": "accessories",
+    "image": "images/access6.jpg",
+    "images": [
+      "images/access6.jpg",
+      "images/access6-1.jpg"
+    ],
+    "description": "سوار فرعونية من الستانلس ستيل على شكل أبو الهول",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.4,
+    "colors": ["بني", "أسود"],
+    "material": "جلد طبيعي",
+    "stock": 25
+  },
+  {
+    "id": 27,
+    "name": "Stainlessteel earing",
+    "price": 105,
+    "category": "accessories",
+    "image": "images/ring1.jpg",
+    "images": [
+      "images/ring1.jpg",
+      "images/ring1-1.jpg"
+    ],
+    "description": "حلق فرعونية من الستانلس ستيل على شكل مفتاح الحياه",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.4,
+    "colors": ["بني", "أسود"],
+    "material": "جلد طبيعي",
+    "stock": 25
+  },
+  {
+    "id": 28,
+    "name": "Stainlessteel earing",
+    "price": 105,
+    "category": "accessories",
+    "image": "images/ring2.jpg",
+  
+    "description": "حلق فرعونية من الستانلس ستيل على شكل مفتاح الحياه",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.4,
+    "colors": ["بني", "أسود"],
+    "material": "جلد طبيعي",
+    "stock": 25
+  },
+   {
+    "id": 29,
+    "name": "Stainlessteel earing",
+    "price": 105,
+    "category": "accessories",
+    "image": "images/ring3.jpg",
+  
+    "description": "حلق فرعونية من الستانلس ستيل على شكل مفتاح الحياه",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.4,
+    "colors": ["بني", "أسود"],
+    "material": "جلد طبيعي",
+    "stock": 25
+  },
+  {
+    "id": 30,
+    "name": "Stainlessteel ring",
+    "price": 80,
+    "category": "accessories",
+    "image": "images/ring4.jpg",
+    "images": [
+      "images/ring4.jpg",
+      "images/ring4-1.jpg",
+      "images/ring4-2.jpg"
+    ],
+    "description": "خواتم فرعونية من الستانلس ستيل ",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.4,
+    "colors": ["بني", "أسود"],
+    "material": "جلد طبيعي",
+    "stock": 25
+  }, {
+    "id": 31,
+    "name": "Premium ceramic mug",
+    "price": 245,
+    "category": "mug",
+    "image": "images/mug2.jpg",
+    "images": [
+      "images/mug2.jpg",
+      "images/mug2-2.jpg",
+      "images/mug2-3.jpg",
+      "images/mug2-4.jpg",
+      "images/mug2-5.jpg"
+
+   
+
+    ],
+    "description":"كوب سيراميك امن للميكروويف طلاء مقاوم للخدش مقبض مريح للاستخدام اليومى.",
+    "sizes": ["350ml", "300ml"],
+    "availableSizes": ["350ml","300ml"],
+    "rating": 4.8,
+    "colors": ["أبيض", "أزرق"],
+    "material": "سيراميك",
+    "stock": 40
+  },
+   {
+    "id": 32,
+    "name": "A stylish and lightweight acrylic keychain made from premium, clear-cut acrylic that showcases vibrant colors and sharp details.",
+    "price": 25,
+    "category": "accessories",
+    "image": "images/medal1.jpg",
+    "images": [
+      "images/medal1.jpg",
+      "images/medal1-1.jpg",
+      "images/medal1-2.jpg",
+      "images/medal1-3.jpg"
+
+    ],
+    "description": "ميدالية أكريليك أنيقة وخفيفة، مصنوعة من أكريليك عالي الجودة بسطح شفاف وواضح يبرز الألوان والتفاصيل بدقة.",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.4,
+    "colors": ["بني", "أسود"],
+    "material": "جلد طبيعي",
+    "stock": 25
+  },
+  {
+    "id": 33,
+    "name": "A stylish and lightweight acrylic keychain made from premium, clear-cut acrylic that showcases vibrant colors and sharp details.",
+    "price": 25,
+    "category": "accessories",
+    "image": "images/medal2.jpg",
+    "images": [
+      "images/medal2.jpg",
+      "images/medal2-1.jpg",
+      "images/medal2-3.jpg"
+
+    ],
+    "description": "ميدالية أكريليك أنيقة وخفيفة، مصنوعة من أكريليك عالي الجودة بسطح شفاف وواضح يبرز الألوان والتفاصيل بدقة.",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.4,
+    "colors": ["بني", "أسود"],
+    "material": "جلد طبيعي",
+    "stock": 25
+  },
+  {
+    "id": 34,
+    "name": "Egyptian Calendar Notebook",
+    "price": 32,
+    "category": "notebook",
+    "image": "images/note2.jpg",
+    "images": [
+      "images/note2-1.jpg",
+      "images/note2-2.jpg",
+      "images/note2-3.jpg"
+    ],
+    "description": "A premium-quality notebook designed for everyday use. Features a smooth, durable cover with a clean modern finish, and high-grade, bleed-resistant paper for effortless writing. The notebook opens flat for a comfortable writing experience and includes firm binding that keeps pages secure نوت بوك عالية الجودة مناسبة للاستخدام اليومي. الغلاف متين وناعم بلمسة أنيقة وعصرية، والصفحات مصنوعة من ورق ممتاز ما بيسربش الحبر ويدّي كتابة مريحة وواضحة. النوت بوك بتتفرد بسهولة علشان تسهّل الكتابة، ومربوطة بشكل قوي يحافظ على كل الصفحات.",
+    "sizes": ["A5"],
+    "availableSizes": ["A5"],
+    "rating": 4.3,
+    "colors": ["أصفر", "بني"],
+    "material": "ورق عالي الجودة",
+    "stock": 35
+  },
+  {
+    "id": 35,
+    "name": "Egyptian Calendar Notebook",
+    "price": 32,
+    "category": "notebook",
+    "image": "images/note3.jpg",
+    "images": [
+      "images/note3-1.jpg",
+      "images/note3-2.jpg",
+      "images/note3-3.jpg",
+      "images/note3-4.jpg",
+      "images/note3-5.jpg",
+      "images/note3-6.jpg",
+      "images/note3-7.jpg"
+
+    ],
+    "description": "A premium-quality notebook designed for everyday use. Features a smooth, durable cover with a clean modern finish, and high-grade, bleed-resistant paper for effortless writing. The notebook opens flat for a comfortable writing experience and includes firm binding that keeps pages secure نوت بوك عالية الجودة مناسبة للاستخدام اليومي. الغلاف متين وناعم بلمسة أنيقة وعصرية، والصفحات مصنوعة من ورق ممتاز ما بيسربش الحبر ويدّي كتابة مريحة وواضحة. النوت بوك بتتفرد بسهولة علشان تسهّل الكتابة، ومربوطة بشكل قوي يحافظ على كل الصفحات.",
+    "sizes": ["A5"],
+    "availableSizes": ["A5"],
+    "rating": 4.3,
+    "colors": ["أصفر", "بني"],
+    "material": "ورق عالي الجودة",
+    "stock": 35
+  },
+   {
+    "id": 36,
+    "name": "A sleek and comfortable pen ",
+    "price": 20,
+    "category": "siphon",
+    "image": "images/pen2.jpg",
+    "images": [
+      "images/pen2-1.jpg",
+      "images/pen2-2.jpg",
+      "images/pen2-3.jpg",
+      "images/pen2-4.jpg"
+
+    ],
+    "description": "قلم أنيق ومريح، مصمّم لكتابة سلسة ومنتظمة. جسمه خفيف وفيه جزء مريح للإمساك علشان يسهّل الكتابة من غير تعب، ومعاه حبر عالي الجودة بيكتب بخط واضح وثابت من غير تقطيع.  A sleek and comfortable pen designed for smooth, consistent writing. Features a lightweight body with an ergonomic grip for easy handling, and a high-quality ink refill that delivers clean, skip-free lines",
+
+  
+    "rating": 4.6,
+    "colors": ["فضي", "أسود"],
+    "material": "ستانلس ستيل",
+    "stock": 15
+  },{
+    "id": 37,
+    "name": "A chic and compact leather clutch ",
+    "price": 330,
+    "category": "bags",
+    "image": "images/bag4-1.jpg",
+    "images": [
+      "images/bag5.jpg",
+      "images/bag4-1.jpg",
+      "images/bag4-2.jpg",
+      "images/bag4-3.jpg",
+      
+      "images/bag4-6.jpg"
+     
+    ],
+    "description": "A chic and compact leather clutch crafted from premium, soft-touch leather with a clean, elegant finish. Designed to hold your essentials with ease كلاتش جلد أنيق وكلاسيك، مصنوع من جلد عالي الجودة بملمس ناعم وتشطيب راقي. حجمه مناسب يشيل أساسياتك بسهولة.كلاتش جلد أنيق وكلاسيك، مصنوع من جلد عالي الجودة بملمس ناعم وتشطيب راقي. حجمه مناسب يشيل أساسياتك بسهولة.",
+    "sizes": ["One Size"],
+    "availableSizes": ["One Size"],
+    "rating": 4.6,
+    "colors": ["أزرق", "أبيض"],
+    "material": "نايلون",
+    "stock": 12
+  },
+    {
+    "id": 38,
+    "name": "Thermal mug Double-wall-Long-sleeve sweatshirt with a hood",
+    "price": 800,
+    "category": "box",
+    "image": "images/box3.jpg",
+   
+    "description": "Thermal mug Double-wall-Long-sleeve sweatshirt with a hood",
+   
+    "rating": 4.9,
+    "colors": ["ذهبي", "أحمر"],
+    "material": "خشب ومخمل",
+    "stock": 6
+  },
+  {
+    "id": 39,
+    "name": "Ecleric keychain with a story note book",
+    "price": 200,
+    "category": "box",
+    "image": "images/box4.jpg",
+   
+    "description": "Ecleric keychain with a story note book",
+   
+    "rating": 4.9,
+    "colors": ["ذهبي", "أحمر"],
+    "material": "خشب ومخمل",
+    "stock": 6
+  },
+  {
+    "id": 40,
+    "name": "Notebook and pen with a bookmark as a free gift.",
+    "price": 50,
+    "category": "box",
+    "image": "images/box5.jpg",
+   
+    "description": "Notebook and pen with a bookmark as a free gift.",
+   
+    "rating": 4.9,
+    "colors": ["ذهبي", "أحمر"],
+    "material": "خشب ومخمل",
+    "stock": 6
   }
 ]

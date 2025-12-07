@@ -25,11 +25,10 @@
             <li><a href="tickets.html" class="ticket-btn">حجز التذاكر</a></li>
         </nav>
 
-           <div class="cart" onclick="window.location.href='cart.html'">
-        <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-count">0</span>
-
-    </div>
+        <div class="cart" onclick="window.location.href='cart.html'">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
     </header>
 
     <!-- Hero Image -->
@@ -84,7 +83,6 @@
                             <label for="cat-box">بوكسيز</label>
                         </li>
                     </ul>
-                  
                 </div>
 
                 <div class="widget price-filter">
@@ -100,7 +98,7 @@
             <!-- Products Grid -->
             <div class="products-grid">
                 <div class="top-bar">
-                    <p id="results-count">عرض 1-8 من 8 نتيجة</p>
+                    <p id="results-count">عرض <span id="current-range">1-12</span> من <span id="total-products">24</span> نتيجة</p>
                     <select id="sort">
                         <option value="default">الترتيب الافتراضي</option>
                         <option value="low">الأقل سعرًا</option>
@@ -110,10 +108,28 @@
                 </div>
 
                 <div class="grid" id="products-container"></div>
+                
+                <!-- Pagination Section -->
+                <div class="pagination-container" id="pagination-container">
+                    <div class="pagination">
+                        <button id="prev-page" class="page-btn" disabled>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <div class="page-numbers" id="page-numbers">
+                            <!-- سيتم إضافة أرقام الصفحات هنا عبر JavaScript -->
+                        </div>
+                        
+                        <button id="next-page" class="page-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-     <div class="wheel-trigger" id="wheelTrigger">
+
+    <div class="wheel-trigger" id="wheelTrigger">
         <i class="fas fa-gift"></i>
     </div>
 
@@ -145,8 +161,6 @@
         <button class="close-result" id="closeResult"> تطبيق</button>
     </div>
 
-
     <script src="script.js"></script>
-    
 </body>
 </html>
